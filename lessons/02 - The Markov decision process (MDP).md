@@ -170,7 +170,7 @@ The probability of reaching each successor state by taking the optimal action mu
 
 ![](../Assets/photos/Solving%20a%20Markov%20decision%20process_2.PNG)
 
-
+https://colab.research.google.com/github/escape-velocity-labs/beginner_master_rl/blob/main/MDP_introduction.ipynb#scrollTo=Klag2liexhB8
 
 
 
