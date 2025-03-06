@@ -133,7 +133,7 @@ In practice, intermediate values are often used. In many tasks, the default valu
 
 # State values v(s) and action values q(s,a)
 
-&nbsp;&nbsp;&nbsp;In this video, we're going to discover a way to evaluate the different states and actions of a task. The value of a state will be defined as the return that we expect to obtain starting from that state and interacting with the environment following policy pi until the end of the episode. The value of a state is linked to the policy that we decide to follow, since different policies take different actions and will achieve different returns.
+&nbsp;&nbsp;&nbsp;We're going to discover a way to evaluate the different states and actions of a task. The value of a state will be defined as the return that we expect to obtain starting from that state and interacting with the environment following policy pi until the end of the episode. The value of a state is linked to the policy that we decide to follow, since different policies take different actions and will achieve different returns.
 
 ![](../Assets/photos/state%20values.PNG)
 
@@ -146,7 +146,15 @@ In practice, intermediate values are often used. In many tasks, the default valu
 
 &nbsp;&nbsp;&nbsp;We're going to discover the bellman equations, which will be of vital importance when searching for the optimal policy to solve control tasks.  
 This one here is the `Bellman equation` for the `value of a state.  
-Starting from the definition of the value of a state which we know is the expected return following policy pi from this state, we can expand the definition of the return to arrive at the second expression.If you notice, this expression, starting at the second term is equal to the return starting from the next moment in time, discounted by gamma. And thus we arrive at the third formula. Finally to get to the fourth expression, remember that the value of a state is the expected return. This mathematical expectation can be written as the probability of taking each action following that policy multiplied by the return we expect to get from taking that action. And that return can be expressed as the probability. Of reaching each possible successor state multiplied by the reward obtained upon reaching that state, plus the discounted value of that successor state. Notice that we have discovered a recursive relationship between the value of one state and the values of other states.  
+Starting from the definition of the value of a state which we know is the expected return following policy pi from this state, we can expand the definition of the return to arrive at the second expression.If you notice, this expression, starting at the second term is equal to the return starting from the next moment in time, discounted by gamma. And thus we arrive at the third formula.  
+Finally to get to the fourth expression, remember that the value of a state is the expected return. This mathematical expectation can be written as :  
+the probability of taking each action following that policy  
+multiplied by  
+the return we expect to get from taking that action. And that return can be expressed as the probability Of reaching each possible successor state  
+multiplied by  
+the reward obtained upon reaching that state, plus the discounted value of that successor state.  
+Notice that we have discovered a recursive relationship between the value of one state and the values of other states. 
+
 
 ![](../Assets/photos/bellman%20equation_1.PNG)
 
