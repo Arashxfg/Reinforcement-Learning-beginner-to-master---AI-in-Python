@@ -55,7 +55,7 @@ After every move, the agent gets a reward of -1. The goal is to find the exit th
 
 ![](../Assets/photos/value%20iteration_4.PNG)
 
-&nbsp;&nbsp;&nbsp;After the first iteration, the value table will look like this. All rewards are -1 after performing any action and the estimate of the next day is 0 in all cases. So the new estimate, according to the rule below, will be negative one for all states except the goal. The two closest states to the goal, this and this. Have already reached their optimal value, if they take the optimal action, they'll reach the goal and get the reward of -1 and then the task is finished.
+&nbsp;&nbsp;&nbsp;After the first iteration, the value table will look like this. All rewards are -1 after performing any action and the estimate of the next day is 0 in all cases. So the new estimate, according to the rule below, will be -1 for all states except the goal. The two closest states to the goal, this and this. Have already reached their optimal value, if they take the optimal action, they'll reach the goal and get the reward of -1 and then the task is finished.
 
 ![](../Assets/photos/value%20iteration_5.PNG)
 
